@@ -96,11 +96,11 @@ features = [
 url = "2.5"
 block2 = "0.6"
 objc2 = { version = "0.6", features = [
-    "exception",
-    # because `NSUUID::from_bytes` needs it,
-    # and `WebViewBuilderExtDarwin.with_data_store_identifier` crashes otherwise,
-    # see https://github.com/tauri-apps/tauri/issues/12843
-    "disable-encoding-assertions",
+  "exception",
+  # because `NSUUID::from_bytes` needs it,
+  # and `WebViewBuilderExtDarwin.with_data_store_identifier` crashes otherwise,
+  # see https://github.com/tauri-apps/tauri/issues/12843
+  "disable-encoding-assertions",
 ] }
 objc2-web-kit = { version = "0.3.0", default-features = false, features = [
   "std",
@@ -206,6 +206,7 @@ winit = "0.30"
 getrandom = "0.3"
 http-range = "0.1"
 percent-encoding = "2.3"
+gpui = { git = "https://github.com/zed-industries/zed.git" }
 
 [lints.rust.unexpected_cfgs]
 level = "warn"
